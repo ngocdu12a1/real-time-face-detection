@@ -65,17 +65,6 @@ bool Detector::detectFaceCNN(Mat image, vector<FaceRectangle> &result) {
     return  true;
 }
 
-vector<FaceRectangle> Detector::detectFaceDLibHOG(Mat image) {
-    return vector<FaceRectangle>();
-}
-
-vector<FaceRectangle> Detector::detectFaceOpenCV(Mat image) {
-    return vector<FaceRectangle>();
-
-
-}
-
-
 bool Detector::detectFace(Mat image, vector<FaceRectangle> &result) {
     bool res = false;
 

@@ -26,9 +26,8 @@ public:
     Detector();
     Detector(int width, int height);
     ~Detector();
+
     bool detectFace(Mat image, vector<FaceRectangle> &result);
-    vector<FaceRectangle> detectFaceDLibHOG(Mat image);
-    vector<FaceRectangle> detectFaceOpenCV(Mat image);
     bool detectFaceCNN(Mat image, vector<FaceRectangle> &result);
 
 private:
